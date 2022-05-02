@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import VisibilitySensor from 'react-visibility-sensor';
+import Image from 'next/image';
 
 export default function GridGallery({ images }) {
   const [imagesShownArray, setImagesShownArray] = useState(
@@ -49,7 +50,7 @@ function GridGalleryCard({ imageUrl, show, text }) {
           {text}
         </div>
       </div>
-      <img src={imageUrl} alt="" />
+      <Image src={imageUrl} layout="fill" />
     </div>
   );
 }
