@@ -18,7 +18,7 @@ export default function GridGallery({ images }) {
   };
 
   return (
-    <div className="grid grid-cols-2 gap-4 mx-4">
+    <div className="grid grid-cols-2 gap-4 mx-4 py-24 sm:py-2">
       {images &&
         images.map((imageUrl, index) => (
           <VisibilitySensor
@@ -31,6 +31,8 @@ export default function GridGallery({ images }) {
               imageUrl={imageUrl.src}
               show={imagesShownArray[index]}
               text={imageUrl.text}
+              location={imageUrl.location}
+              date={imageUrl.date}
             />
           </VisibilitySensor>
         ))}

@@ -4,7 +4,7 @@ import { images } from '../data/photos';
 
 export default function Home() {
   return (
-    <div className="container ml-36 ">
+    <div className="container  mx-auto ">
       <Nav />
       <GridGallery images={images} />
     </div>
