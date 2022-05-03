@@ -50,7 +50,7 @@ function GridGalleryCard({ imageUrl, show, text }) {
           {text}
         </div>
       </div>
-      <Image src={imageUrl} layout="fill" alt="hi" />
+      <img src={imageUrl} alt="hi" />
     </div>
   );
 }
