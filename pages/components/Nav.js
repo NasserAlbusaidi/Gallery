@@ -12,13 +12,13 @@ export default function Nav() {
         </div>
         <ul className="flex justify-end font-extralight py-2 ">
           <li className="sm:mr-6 mr-2 text-xs sm:text-xl  ">
-            <a href="/portraits">Portraits</a>
+            <Link href="/portraits">Portraits</Link>
           </li>
           <li className="sm:mr-6 mr-2 text-xs sm:text-xl ">
-            <a href="/landscape">landscape</a>
+            <Link href="/landscape">landscape</Link>
           </li>
           <li className="sm:mr-6 mr-2 text-xs sm:text-xl ">
-            <a href="/places">Places</a>
+            <Link href="/places">Places</Link>
           </li>
         </ul>
       </nav>
