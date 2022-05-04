@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import VisibilitySensor from 'react-visibility-sensor';
-import Image from 'next/image';
 import GridGalleryCard from './Grid';
 
 export default function GridGallery({ images }) {

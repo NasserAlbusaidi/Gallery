@@ -16,7 +16,7 @@ export async function getServerSideProps() {
 
   const images = await db
     .collection('gallery')
-    .find({})
+    .find({ tag: 'places' })
     .sort({ metacritic: -1 })
     .limit(20)
     .toArray();
