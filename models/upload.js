@@ -2,8 +2,8 @@ var mongoose = require('mongoose');
 
 var Schema = new mongoose.Schema({
   src: {
-    type: String,
-    required: true,
+    date: Buffer,
+    contentType: String,
   },
   text: {
     type: String,
@@ -18,3 +18,5 @@ var Schema = new mongoose.Schema({
     required: true,
   },
 });
+
+module.exports = mongoose.model('Image', Schema);
